@@ -1,0 +1,80 @@
+header.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #edf2f4;
+  padding: 8px 32px;
+  font-family: "Roboto", sans-serif;
+}
+
+header.main-header .logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+header.main-header .search-icon svg {
+  height: 24px;
+}
+
+header.main-header .search-icon {
+  padding: 4px;
+  cursor: pointer;
+}
+
+.search-results {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  right: 0;
+  background: #edf2f4;
+  padding: 24px 32px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 400ms ease;
+}
+
+.search-results.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-results .search-input {
+  width: 100%;
+  border: none;
+  padding: 12px 16px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-results .search-title {
+  font-size: 14px;
+  margin: 16px 0;
+}
+
+.search-results ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-results ul a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #2b2d42;
+  font-weight: bold;
+  padding: 12px;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 400ms ease;
+}
+
+.search-results ul a:hover {
+  background: #dae7eb;
+}
